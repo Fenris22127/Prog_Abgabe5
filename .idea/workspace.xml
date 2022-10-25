@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3c883a0-718a-4e8e-bd53-0fba914da112" name="Changes" comment="Added Main">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/SerializableList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/medieninformatik/prog_abgabe5/SerializableListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/SerializableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/SerializableList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +62,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_directory_selection": "C:/Users/Elisa/IdeaProjects/Prog_Abgabe5/src/test/java/de/medieninformatik/prog_abgabe5",
-    "last_opened_file_path": "C:/Users/Elisa/Downloads/Prog_Abgabe5",
+    "last_opened_file_path": "C:/Users/Elisa/IdeaProjects/Prog_Abgabe5",
     "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
@@ -216,7 +207,8 @@
       <workItem from="1666716941167" duration="8935000" />
       <workItem from="1666725939909" duration="25000" />
       <workItem from="1666725985293" duration="215000" />
-      <workItem from="1666726274652" duration="8000" />
+      <workItem from="1666726207866" duration="189000" />
+      <workItem from="1666726412196" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main">
       <created>1666717078382</created>

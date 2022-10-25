@@ -8,29 +8,34 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
+/**
+ * Erlaubt die Serialisierung/Deserialisierung von Elementen in einer {@link ArrayList}.
+ *
+ * @author Elisa Johanna Woelk (m30192)
+ * @version 1.0
+ * @param <T> Der generische Typ, welcher für die Serialisierung/Deserialisierung verwendet wird
+ */
 public class SerializableList<T> implements List<T> {
 
-    /*
-    * Create Object
-    * Create Stream for writing -> FileOutputStream to ObjectOutputStream
-    * writeObject()
-    * flush() oos
-    * close() oos
-    *
-    *
-    * Create stream to read
-    * ObjectInputStream from FileInputStream (?)
-    * Create new object, cast to obj + readObject()
-    * write data somewhere
-    * close stream
-    *
-    * */
+    /**
+     * Die {@link ArrayList}, welche für die Instanz der Klasse verwendet wird
+     */
     private final ArrayList<T> list;
 
+    /**
+     * Der Konstruktor der Klasse, welcher die übergebene {@link ArrayList} auf das Klassenfeld {@link #list} setzt
+     * @param list Die {@link ArrayList}, welche für diese Klasseninstanz verwendet werden soll
+     */
     public SerializableList(ArrayList<T> list) {
         this.list = list;
     }
 
+    /**
+     * Serialisiert den Inhalt der übergebenen {@link List} und schreibt diesen in einen {@link ObjectOutputStream}
+     * @param list Die übergebene {@link List} mit dem zu serialisierenden Inhalt
+     * @param objectOut Der {@link ObjectOutputStream}, in welchen der Listeninhalt geschrieben werden soll
+     * @throws IOException Sollte ein I/O Fehler während der Erstellung des {@link ObjectOutputStream}s auftreten
+     */
     public static void serialize(List<?> list, ObjectOutputStream objectOut) throws IOException {
 
         if (objectOut == null) throw new NullPointerException("ObjectOutputStream is null!");
@@ -44,6 +49,13 @@ public class SerializableList<T> implements List<T> {
         }
     }
 
+    /**
+     * Deserialisiert den Inhalt des übergebenen {@link ObjectInputStream}s und schreibt diesen in eine {@link List}
+     * @param elemClass Die Klasse der, im {@link ObjectInputStream} enthaltenen Elemente
+     * @param objectInput Der {@link ObjectInputStream} mit den zu deserialisierenden Elementen
+     * @return Eine {@link List} mit den deserialisierten Elementen
+     * @param <T> Der generische Typ T, welcher für die Serialisierung/Deserialisierung verwendet wird
+     */
     public static <T> List<T> deserialize(Class<? extends T> elemClass, ObjectInputStream objectInput) {
         try (objectInput) {
             ArrayList<T> deList = new ArrayList<>();
@@ -109,7 +121,7 @@ public class SerializableList<T> implements List<T> {
      * {@code Objects.equals(o, get(i))},
      * or -1 if there is no such index.
      *
-     * @param o
+     * @param o The object being searched for in the list
      */
     @Override
     public int indexOf(Object o) {
@@ -123,7 +135,7 @@ public class SerializableList<T> implements List<T> {
      * {@code Objects.equals(o, get(i))},
      * or -1 if there is no such index.
      *
-     * @param o
+     * @param o The object which last occurrence is to be found in the list
      */
     @Override
     public int lastIndexOf(Object o) {
@@ -142,7 +154,7 @@ public class SerializableList<T> implements List<T> {
     }
 
     /**
-     * Returns an array containing all of the elements in this list
+     * Returns an array containing all the elements in this list
      * in proper sequence (from first to last element).
      *
      * <p>The returned array will be "safe" in that no references to it are
@@ -152,7 +164,7 @@ public class SerializableList<T> implements List<T> {
      * <p>This method acts as bridge between array-based and collection-based
      * APIs.
      *
-     * @return an array containing all of the elements in this list in
+     * @return an array containing all the elements in this list in
      * proper sequence
      */
     @Override
@@ -161,7 +173,7 @@ public class SerializableList<T> implements List<T> {
     }
 
     /**
-     * Returns an array containing all of the elements in this list in proper
+     * Returns an array containing all the elements in this list in proper
      * sequence (from first to last element); the runtime type of the returned
      * array is that of the specified array.  If the list fits in the
      * specified array, it is returned therein.  Otherwise, a new array is
@@ -261,6 +273,7 @@ public class SerializableList<T> implements List<T> {
      */
     @Override
     public boolean equals(Object o) {
+        assert o instanceof List<?>;
         return list.equals(o);
     }
 
@@ -291,11 +304,11 @@ public class SerializableList<T> implements List<T> {
     }
 
     /**
-     * Returns {@code true} if this list contains all of the elements of the
+     * Returns {@code true} if this list contains all the elements of the
      * specified collection.
      *
      * @param c collection to be checked for containment in this list
-     * @return {@code true} if this list contains all of the elements of the
+     * @return {@code true} if this list contains all the elements of the
      * specified collection
      * @throws ClassCastException   if the types of one or more elements
      *                              in the specified collection are incompatible with this
@@ -411,7 +424,7 @@ public class SerializableList<T> implements List<T> {
      *
      * <p>The returned list iterator is <a href="#fail-fast"><i>fail-fast</i></a>.
      *
-     * @param index
+     * @param index The index to be started at
      * @throws IndexOutOfBoundsException {@inheritDoc}
      */
     @Override
@@ -470,8 +483,8 @@ public class SerializableList<T> implements List<T> {
      * those that change the size of this list, or otherwise perturb it in such
      * a fashion that iterations in progress may yield incorrect results.)
      *
-     * @param fromIndex
-     * @param toIndex
+     * @param fromIndex The starting index for the sublist
+     * @param toIndex The ending index of the sublist
      * @throws IndexOutOfBoundsException {@inheritDoc}
      * @throws IllegalArgumentException  {@inheritDoc}
      */
@@ -481,7 +494,7 @@ public class SerializableList<T> implements List<T> {
     }
 
     /**
-     * @param action
+     * @param action The action to be performed
      * @throws NullPointerException {@inheritDoc}
      */
     @Override
@@ -508,7 +521,7 @@ public class SerializableList<T> implements List<T> {
     }
 
     /**
-     * @param filter
+     * @param filter The filter used for removing elements
      * @throws NullPointerException {@inheritDoc}
      */
     @Override
