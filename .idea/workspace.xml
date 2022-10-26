@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3c883a0-718a-4e8e-bd53-0fba914da112" name="Changes" comment="Added Main">
+    <list default="true" id="f3c883a0-718a-4e8e-bd53-0fba914da112" name="Changes" comment="Added Javadoc Comments for Main Classes (Not Main tho)">
+      <change afterPath="$PROJECT_DIR$/data.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textfile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textfile2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textfile3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textfile4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/SerializableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/medieninformatik/prog_abgabe5/SerializableList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/medieninformatik/prog_abgabe5/SerializableListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/medieninformatik/prog_abgabe5/SerializableListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +55,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GdkdsYX0xaOCKXAw1OO56Qg4yP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -70,54 +79,29 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elisa\IdeaProjects\Prog_Abgabe5\src" />
+      <recent name="C:\Users\Elisa\IdeaProjects\Prog_Abgabe5\src\main\resources" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="de.medieninformatik.prog_abgabe5" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Prog_Abgabe5 [assemble]">
-    <configuration name="Prog_Abgabe5 [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.medieninformatik.prog_abgabe5.Main" />
+      <module name="Prog_Abgabe5.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.medieninformatik.prog_abgabe5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Prog_Abgabe5 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SerializableListTest.deserializeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SerializableListTest.deserializeStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -130,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.deserializeTest&quot;" />
+            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.deserializeStringTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,7 +124,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SerializableListTest.serializeIntegerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SerializableListTest.fileTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.serializeIntegerTest&quot;" />
+            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.fileTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -163,7 +147,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SerializableListTest.serializeStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SerializableListTest.integerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,7 +160,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.serializeStringTest&quot;" />
+            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.integerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SerializableListTest.stringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.medieninformatik.prog_abgabe5.SerializableListTest.stringTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Prog_Abgabe5 [assemble]" />
-        <item itemvalue="Gradle.Prog_Abgabe5 [build]" />
-        <item itemvalue="Gradle.SerializableListTest.deserializeTest" />
-        <item itemvalue="Gradle.SerializableListTest.serializeStringTest" />
-        <item itemvalue="Gradle.SerializableListTest.serializeIntegerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.SerializableListTest.fileTest" />
+        <item itemvalue="Gradle.SerializableListTest.integerTest" />
+        <item itemvalue="Gradle.SerializableListTest.stringTest" />
+        <item itemvalue="Gradle.SerializableListTest.deserializeStringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +215,8 @@
       <workItem from="1666725939909" duration="25000" />
       <workItem from="1666725985293" duration="215000" />
       <workItem from="1666726207866" duration="189000" />
-      <workItem from="1666726412196" duration="1435000" />
+      <workItem from="1666726412196" duration="2569000" />
+      <workItem from="1666770876260" duration="3922000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main">
       <created>1666717078382</created>
@@ -217,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666717078382</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Javadoc Comments for Main Classes (Not Main tho)">
+      <created>1666728311592</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666728311592</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +250,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Main" />
+    <MESSAGE value="Added Javadoc Comments for Main Classes (Not Main tho)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Javadoc Comments for Main Classes (Not Main tho)" />
   </component>
 </project>

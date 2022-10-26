@@ -12,6 +12,7 @@ import java.util.stream.Stream;
  * Erlaubt die Serialisierung/Deserialisierung von Elementen in einer {@link ArrayList}.
  *
  * @author Elisa Johanna Woelk (m30192)
+ * @author J. Constantin Fritzsch (m30113)
  * @version 1.0
  * @param <T> Der generische Typ, welcher für die Serialisierung/Deserialisierung verwendet wird
  */
@@ -44,8 +45,11 @@ public class SerializableList<T> implements List<T> {
         if (list.isEmpty()) {
             objectOut.writeObject(new ArrayList<>());
         }
-        if (list.get(0) instanceof Serializable) {
+        else if (list.get(0) instanceof Serializable) {
             objectOut.writeObject(list);
+        }
+        else {
+            throw new NotSerializableException("Elements are not serializable!");
         }
     }
 
